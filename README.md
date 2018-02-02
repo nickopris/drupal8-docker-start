@@ -4,7 +4,7 @@
 # Prerequisites
 
 - Install [Docker for Mac](https://www.docker.com/docker-mac)
-- docker-sync - 
+- Install docker-sync - 
 ```gem install docker-sync```
 
 # How to run
