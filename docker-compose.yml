@@ -29,7 +29,7 @@ services:
 #      PHP_XDEBUG_TRACE_OUTPUT_DIR: /mnt/files/xdebug/traces
 #      PHP_BLACKFIRE: 1
     volumes:
-      - ./:/var/www/html
+      - ./drupal8:/var/www/html
 
 
   nginx:
@@ -40,9 +40,9 @@ services:
       NGINX_STATIC_CONTENT_OPEN_FILE_CACHE: "off"
       NGINX_ERROR_LOG_LEVEL: debug
       NGINX_BACKEND_HOST: php
-      NGINX_SERVER_ROOT: /var/www/html
+      NGINX_SERVER_ROOT: /var/www/html/web
     volumes:
-      - ./:/var/www/html
+      - ./drupal8:/var/www/html
     labels:
       - 'traefik.backend=nginx'
       - 'traefik.port=80'
