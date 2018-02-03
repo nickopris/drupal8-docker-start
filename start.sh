@@ -12,7 +12,8 @@ timeout () {
 
 docker-sync start
 docker-compose up -d
-timeout 20 "Waiting %s seconds for files to be copied across..."
+sleep 2
+timeout 10 "Waiting %s seconds for files to be copied across..."
 echo ""
 echo "Your development website is up and running."
 echo ""

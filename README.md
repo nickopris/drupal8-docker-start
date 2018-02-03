@@ -30,8 +30,12 @@
   I use Kitematic to investigate containers. If a container fails to run make note of the errors and make sure they are not already running.(this was one of my problems, I forgot it running in a different project and two similar services were not able to run at the same time on same ports).
   
   If you're feeling geeky use these commands to investigate:
+  
   ```docker ps --all```
+  
   ```docker images --all```
+  
+  ```docker exec -it <container name> /bin/bash``` - to ssh into a container
   
   [Docker reference](https://docs.docker.com/engine/reference/commandline/ps/)
   
