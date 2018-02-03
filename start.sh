@@ -10,10 +10,9 @@ timeout () {
     tput rc; tput ed;
 }
 
-docker-sync start
 docker-compose up -d
-sleep 2
-timeout 10 "Waiting %s seconds for files to be copied across..."
+docker-sync start
+timeout 3 "Waiting %s seconds for files to be copied across..."
 echo ""
 echo "Your development website is up and running."
 echo ""
@@ -21,4 +20,3 @@ echo "Check this link for all endpoints: https://github.com/wodby/docker4drupal/
 open http://portainer.drupal.docker.localhost:8000/#/containers/
 open http://drupal.docker.localhost:8000
 echo "Done"
-

@@ -10,6 +10,8 @@ services:
       MYSQL_PASSWORD: drupal
     volumes:
       - ./database:/var/lib/mysql:rw
+      - ./assets:/home:rw
+    #command: mysql -u drupal -pdrupal drupal < /home/import.sql
 
   php:
     image: wodby/drupal-php:7.1-3.3.1
