@@ -14,6 +14,7 @@
 - ```bash start.sh``` - will start containers and docker-sync + your start homepage in browser
 - ```bash stop.sh``` - will stop containers - db does not get removed because it's local
 -```bash restart.sh``` - will stop containers and docker-sync and then restart these, no db is lost
+- ```docker-compose exec php drush``` - drush
 
 
 # Behind the scenes
@@ -40,3 +41,5 @@
   [Docker reference](https://docs.docker.com/engine/reference/commandline/ps/)
   
   [Docker Sync](http://docker-sync.io/)
+  
+  [docker4drupal](https://github.com/wodby/docker4drupal) - everything you need to know about what is installed in these containers.
